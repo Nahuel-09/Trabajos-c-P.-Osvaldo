@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="registro-form">
+        <label for="refer-name">Nombre:</label>
+        <input type="text" id="refer-name" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required placeholder="Ingrese el nombre de su animal.." autofocus>
+    
+        <label for="refer-namesc">Nombre cientifico:</label>
+        <input type="text" id="refer-namesc" required placeholder="Ingrese el nombre cientifico..">
+    
+        <label for="refer-habitat">Habitad:</label>
+        <input type="text" id="refer-habitat" required placeholder="Ingrese el habitad">
+    
+        <label for="refer-info">Informacion Extra:</label>
+        <textarea name="infoExt" id="refer-info"  placeholder="Ingrese un Dato extra.."></textarea>
+    
+        <button type="button" id="btn-add" >Agregar Registro</button>
+    </form>
+
+    <div id="alerta" class="alert"></div>
+    
+    <div class="table-container">
+        <h2>Lista de Registros</h2>
+        <table id="tabla-registro">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cientifico</th>
+                    <th>habita</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="btn-enviar" class="btn-send">Enviar Tabla</button>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

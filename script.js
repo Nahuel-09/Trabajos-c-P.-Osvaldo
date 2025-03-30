@@ -1,3 +1,5 @@
+//Reto: Usa class list para resaltar campos invalidos!
+ 
 // (!!) Array que almacenará las especies registradas
 let especies = [];
 
